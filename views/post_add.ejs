@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2><%= title %></h2>
+  <form action="/save" method="post">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="blogPost" placeholder="Enter Post Title" name="title" required>
+    </div>
+    <div class="form-group">
+      <label for="body">Body:</label>
+      <input type="text" class="form-control" id="blogPost" placeholder="Enter Post Content" name="post" required>
+    </div>
+    <div class="form-group">
+      <label for="keyword">Keywords:</label>
+      <input type="text" class="form-control" id="postKeywords" placeholder="Enter Keywords" name="keyword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Post</button>
+  </form>
+</div>
+
+</body>
+</html>
